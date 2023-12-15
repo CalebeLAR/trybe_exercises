@@ -1,4 +1,4 @@
-### trybe exercices
+### trybe_exercises
 
 shape of the brachsbranchs: **module.section.day**  
   
