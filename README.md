@@ -1,4 +1,4 @@
-# Array e estrutura de repetição >> Exercícios
+# Funções >> Exercícios
 ## soluções no formato:
 
 ```javascript
