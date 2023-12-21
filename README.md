@@ -1,9 +1,21 @@
-# trybe_exercises
+# Array e estrutura de repetição >> Exercícios
+## soluções no formato:
 
-## Shape Branches: `module.section.day`
+```javascript
+/*
+Titulo
+Enunciado
+*/ 
 
-#### Fundamentos
+const function01 = () => {}
+const function02 = () => {}
+...
 
-- **fundamentals.section03.day01** Primeiros passos no JavaScript | `3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02) Array e estrutura de repetição | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03) Funções | `5 Exercícios` ✅
+```
+
+### exercise01.js `Função Soma`
+### exercise02.js `Função de Array de Números`
+### exercise03.js `Função Average`
+### exercise04.js `Função Palíndromo`
+### exercise05.js `Função Validador de Cadastro`
+### exercise06.js `Função Relatório de Atletas`
