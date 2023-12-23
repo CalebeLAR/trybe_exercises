@@ -265,7 +265,6 @@
         }
     }
 
-    // Convertemos o objeto result em um array
     const entries = Object.entries(reportFruit);
 
     let newArray = [];
@@ -277,6 +276,5 @@
             newArray.push(`${entries[index][1]} ${entries[index][0]}`);
         }
     }
-    // Exibimos a string juntando os valores do array "newArray" com uma vírgula e um espaço em branco.
     console.log(`Sua cesta possui: ${newArray.join(', ')}.`);
 ```
