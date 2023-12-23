@@ -17,5 +17,5 @@ const requirement = () => {
 ### exercise02.js `Desafio fatorial`
 ### exercise03.js `Desafio de inverter palavra`
 ### exercise04.js `Desafio dos asteriscos`
-### exercise04.js `Desafio dos asteriscos, parte 2`
+### exercise05.js `Desafio dos asteriscos, parte 2`
 
