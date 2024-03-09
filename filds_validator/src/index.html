@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de campos</title>
+  </head>
+  <body>
+    <form>
+      <textarea></textarea><br>
+      <label for="type-validator">Método de validação:</label>
+      <select name="type-validator">
+        <option value="isAlphanumeric">Alphanumeric</option>
+        <option value="isAscii">Ascii</option>
+        <option value="isEmail">Email</option>
+        <option value="isEmpty">Empty</option>
+        <option value="isLowercase">Lowercase</option>
+        <option value="isDate">Date</option>
+        <option value="isFloat">Float</option>
+        <option value="isJSON">JSON</option>
+        <option value="isJWT">JWT</option>
+        <option value="isMobilePhone">MobilePhone</option>
+        <option value="isTime">Time</option>
+        <option value="isURL">URL</option>
+      </select><br>
+
+      <button type="submit">Validar</button><br>
+
+      <h6>is-valid</h6><br>
+    </form>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>

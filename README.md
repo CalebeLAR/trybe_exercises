@@ -1,14 +1,25 @@
-# trybe_exercises
+# `Exercício Validador de Campos`
 
-## Shape Branches: `module.section.day`
+Exercícios:  
 
-#### Fundamentos
+    1.Crie um projeto npm do zero
 
-- **fundamentals.section03.day01** Primeiros passos no JavaScript | `3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02) Array e estrutura de repetição | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03) Funções | `4 Exercícios` ✅  
-- [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04) Objetos | `4 Exercícios` ✅  
+    2.Instale o vite e a biblioteca que iremos utilizar: validator.js  
 
-#### Front-end
+    3.Estruture uma página HTML com um formulário  
 
-- [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01) Ambiente de desenvolvimento | `Exercício Validador de Campos` ✅  
+    4.O formulário deve possuir: campo para inserir o texto a ser validado, um  
+      dropdown para selecionar qual a validação deve ser feita, um botão para  
+      executar a validação e um texto que informe se o valor é válido ou não  
+
+    5.Faça, pelo menos, cinco validações utilizando a biblioteca validator.  
+      Aproveite e confira a documentação para ver exatamente como utilizá-la!  
+
+    6.Rode sua aplicação utilizando o vite  
+      Teste se sua aplicação é aprovada pelo lint da Trybe  
+
+
+### como usar
+1. clone o projeto  
+2. dentro da pasta raiz, digite npm vite --open
+
