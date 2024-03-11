@@ -1,15 +1,12 @@
-# trybe_exercises
+# API de Super Heróis
 
-## Shape Branches: `module.section.day`
+Uma aplicação que utiliza a API `SuperHero API` para obter a imagem e o nome de uma super-heroína ou super-herói. A aplicação também inclui um alerta para lidar com possíveis erros da API.
 
-#### Fundamentos
+## Como usar:
 
-- [**fundamentals.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day01)**: Primeiros passos no JavaScript** | `3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02)**: Array e estrutura de repetição** | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03)**: Funções** | `4 Exercícios` ✅  
-- [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04)**: Objetos** | `4 Exercícios` ✅  
+1. Clone o repositório.
+2. Execute os seguintes comandos dentro do diretório do projeto:
 
-#### Front-end
-
-- [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01)**: Ambiente de desenvolvimento** | `Exercício Validador de Campos` ✅  
-<!-- - [**front-end.section01.day03**](https://github.com/CalebeLAR/exercise-casa-de-cambio)**: Revisão - Casa de Câmbio** | __`fork`__ `Exercício Casa de Câmbio` ✅   -->
+```bash
+npm run dev
+```
