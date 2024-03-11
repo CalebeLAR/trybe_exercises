@@ -2,11 +2,11 @@
   "name": "trybe_exercises",
   "version": "1.0.0",
   "description": "exercícios para treinar api: (API Super Hero) e (API Pet Shop)",
-  "main": "index.js",
+  "main": "./src/main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx vite --open"
+    "dev": "npx vite --open src/index.html"
   },
   "keywords": [],
   "author": "",
