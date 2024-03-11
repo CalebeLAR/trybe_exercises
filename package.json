@@ -1,0 +1,20 @@
+{
+  "name": "trybe_exercises",
+  "version": "1.0.0",
+  "description": "exercícios para treinar api: (API Super Hero) e (API Pet Shop)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.10.6",
+    "vite": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
