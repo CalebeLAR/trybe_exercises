@@ -12,4 +12,5 @@
 #### Front-end
 
 - [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01)**: Ambiente de desenvolvimento** | `Exercício Validador de Campos` ✅  
+- [**front-end.section01.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day02)**: JavaScript Assíncrono - Promises e fetch** | `API de Super Heróis` ✅  
 <!-- - [**front-end.section01.day03**](https://github.com/CalebeLAR/exercise-casa-de-cambio)**: Revisão - Casa de Câmbio** | __`fork`__ `Exercício Casa de Câmbio` ✅   -->
