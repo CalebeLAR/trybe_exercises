@@ -1,6 +1,6 @@
 # 🚀 Exercícios – Trabalhando com elementos
 
-### `Imagine que você trabalha em uma agência de viagens e sua liderança informa que você será a pessoa responsável por dar início à nova página inicial (landing page) da empresa. Seu objetivo nesse novo desafio é criar tags HTML usando a manipulação do DOM com JavaScript.<br>Para isso, utilize a estrutura inicial apresentada a seguir:`
+### Imagine que você trabalha em uma agência de viagens e sua liderança informa que você será a pessoa responsável por dar início à nova página inicial (landing page) da empresa. Seu objetivo nesse novo desafio é criar tags HTML usando a manipulação do DOM com JavaScript.<br>Para isso, utilize a estrutura inicial apresentada a seguir:
 
 <details>
 
@@ -71,7 +71,7 @@
 ```
 </details>
 
-### `Para criar a página inicial da agência de viagens, você deve utilizar apenas código JavaScript, o qual deve ser inserido entre as tags `<script>` e `</script>`.<br>Para dar início à página, você deve criar algumas tags, conforme o passo a passo indicado a seguir:`
+### Para criar a página inicial da agência de viagens, você deve utilizar apenas código JavaScript, o qual deve ser inserido entre as tags `<script>` e `</script>`.<br>Para dar início à página, você deve criar algumas tags, conforme o passo a passo indicado a seguir:
 `requisito01`: **Crie a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;**  
 `requisito02`: **Crie a tag main com a classe main-content como filho da tag body;**  
 `requisito03`: **Crie a tag section com a classe center-content como filho da tag main criada no passo 2;**  
@@ -82,7 +82,7 @@
 `requisito09`: **Crie uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha do section criado no passo 6;**  
 `requisito10`: **Crie 3 tags h3, todas filhas do main criado no passo 2.**
 
-### `Suponha que, depois da criação das tags indicadas, sua liderança tenha visualizado a estrutura inicial da página e pedido a você que fizesse as seguintes alterações:`
+### Suponha que, depois da criação das tags indicadas, sua liderança tenha visualizado a estrutura inicial da página e pedido a você que fizesse as seguintes alterações:
 
 `requisito01`: **Adicione a classe title na tag h1 criada;**  
 `requisito02`: **Adicione a classe description nas 3 tags h3 criadas;**  
