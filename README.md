@@ -88,15 +88,5 @@ requisito01: **Adicione a classe title na tag h1 criada;**
 requisito02: **Adicione a classe description nas 3 tags h3 criadas;**  
 requisito03: **Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();**  
 requisito04: **Centralize a section criada no passo 6 (aquela que possui a classe right-content).**  
-requisito05: **De olho na dica 👀: Para centralizar a section, basta configurar o margin-right: auto da section.**  
-requisito06: **Troque a cor de fundo do elemento-pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;**  
-requisito07: **Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.**
-
-
-requisito01:Adicione a classe title na tag h1 criada;
-requisito02:Adicione a classe description nas 3 tags h3 criadas;
-requisito03:Remova a section criada no passo 5 (aquela que possui a classe left-content) por meio da função .removeChild();
-requisito04:Centralize a section criada no passo 6 (aquela que possui a classe right-content).
-requisito05:De olho na dica 👀: Para centralizar a section, basta configurar o margin-right: auto da section.
-requisito06:Troque a cor de fundo do elemento-pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
-requisito07:Remova os dois últimos elementos (nove e dez) da lista criada no passo 
+requisito05: **Troque a cor de fundo do elemento-pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;**  
+requisito06: **Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.**
