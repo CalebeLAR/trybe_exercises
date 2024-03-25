@@ -8,6 +8,7 @@
 - [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02)**: Array e estrutura de repetição** | `6 Exercícios` ✅
 - [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03)**: Funções** | `4 Exercícios` ✅  
 - [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04)**: Objetos** | `4 Exercícios` ✅  
+- [**fundamentals.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section04.day02)**:  JavaScript - Trabalhando com elementos** | `9 Exercícios` ✅  
 
 #### Front-end
 
