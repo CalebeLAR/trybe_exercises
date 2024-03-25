@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const makeTag = (tag, className) => {
+        const element = document.createElement(tag);
+        className && element.classList.add(className);
+
+        return element;
+      };
+
+      //01. Adiciona a tag h1 com um titulo e o adiciona como filho da tag body
+      const bodyPage = document.querySelector('body');
+      const trybeTrip = document.createElement('h1');
+      trybeTrip.innerText = 'TrybeTrip - Agência de Viagens';
+      bodyPage.appendChild(trybeTrip);
+
+      //02 Adiciona a tag main com a classe main-content como filho da tag body
+      const tagMain = makeTag('main', 'main-content');
+      bodyPage.appendChild(tagMain);
+
+      //03 Adiciona a tag section com a classe center-content como filho da tag main
+      const tagSection = makeTag('section', 'center-content');
+      tagMain.appendChild(tagSection);
+
+      //04 Adiciona a tag p com um texto e o adiciona como filha da tag section
+      const tagP = makeTag('p');
+      tagP.innerText = 'A melhor agência de viagens';
+      tagSection.appendChild(tagP);
+
+      //05: Cria a tag section com a classe left-content como filho da tag main
+      const tagSectionLeft = makeTag('section', 'left-content');
+      tagMain.appendChild(tagSectionLeft);
+
+      //07: Cria a tag section com a classe right-content como filho da tag main
+      const tagSectionRight = makeTag('section', 'right-content');
+      tagMain.appendChild(tagSectionRight);
+
+      //08: Cria uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image
+      const smallImage = makeTag('img', 'small-image');
+      smallImage.src = 'https://picsum.photos/200';
+      tagSectionLeft.appendChild(smallImage);
+
+      //09: Cria uma lista não ordenada com os valores de 1 a 10 por extenso
+      const unorderedList = makeTag('ul');
+      const numbersInWords = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+      ];
+      numbersInWords.forEach((wordNumber, index) => {
+        const listIndex = index + 1;
+        const listItem = makeTag('li');
+        listItem.innerText = `${listIndex} - ${wordNumber}`;
+        unorderedList.appendChild(listItem);
+      });
+      tagSectionRight.appendChild(unorderedList);
+
+      //10: Cria 3 tags h3, todas filhas do main criado no passo 2
+      const h3Texts = ['Entrar em contato', 'Pedir ajuda', 'Venha trabalhar conosco'];
+      h3Texts.forEach((text) => {
+        const h3Tag = makeTag('h3');
+        h3Tag.innerText = text;
+        tagMain.appendChild(h3Tag);
+      });
+
+      //Bonus01: Adicione a classe title na tag h1 criada
+      trybeTrip.classList.add('title');
+
+      //Bonus02: Adiciona a classe description nas 3 tags h3 criadas
+      const h3Tags = document.querySelectorAll('h3');
+      h3Tags.forEach((h3) => h3.classList.add('description'));
+
+      //Bonus03: Remove a section que possui a classe left-content)
+      const leftContentSection = document.querySelector('.left-content');
+      tagMain.removeChild(leftContentSection);
+
+      //Bonus04: Centraliza a section que possui a classe right-content
+      const rightContentSection = document.querySelector('.right-content');
+      rightContentSection.style.marginRight = 'auto';
+
+      //Bonus05: Troca a cor de fundo para ver do elemento-pai da section que possui a classe center-content
+      const centerContentSection = document.querySelector('.center-content');
+      centerContentSection.parentElement.style.backgroundColor = 'green';
+
+      //Bonus07: Remove os dois últimos elementos da lista de números
+      const tagUL = document.querySelector('.right-content ul');
+      tagUL.lastChild.remove()
+      tagUL.lastChild.remove()
+      
+    </script>
+  </body>
+</html>
