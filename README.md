@@ -126,13 +126,6 @@ SELECT COUNT(Provider) FROM Provides WHERE Piece = 1;
     <img src="Screenshot from 2024-09-11 16-02-01.png" alt="Resposta do Exercício 5">
 </div>
 
-Screenshot from 2024-09-11 16-01-21.png
-Screenshot from 2024-09-11 16-01-29.png
-Screenshot from 2024-09-11 16-01-40.png
-Screenshot from 2024-09-11 16-01-54.png
-Screenshot from 2024-09-11 16-02-01.png
-
-
 ## Sugestões de mais exercícios
 Exercício 3: Usando WHERE, faça os exercícios [deste link](https://www.w3schools.com/sql/exercise.asp?filename=exercise_where1).
 
