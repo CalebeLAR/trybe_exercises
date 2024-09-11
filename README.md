@@ -18,3 +18,6 @@
 
 #### Back-end
 - [**back-end.section02.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day01)**: Banco de dados SQL** | `Trabalhando com o Workbench` ✅  
+- [**back-end.section02.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day02)**: Encontrando dados em um banco de dados** | `Inquirindo dados do banco de dados` ✅  
+
+
