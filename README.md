@@ -1,3 +1,7 @@
+# Exercícios - agora, a prática
+
+Restaure o banco de dados abaixo antes de continuar: `hr.sql`
+
 ### 1. Escreva uma query que exiba o maior salário da tabela.
 ```sql
 SELECT MAX(salary) AS 'maior_salario' FROM hr.employees;
@@ -16,7 +20,7 @@ GROUP BY job_id ORDER BY media DESC;
 
 ### 4. Escreva uma query que exiba a quantidade de dinheiro necessária para realizar o pagamento de todas as pessoas funcionárias.
 ```sql
-SELECT CONCAT('terás de pagar: ', SUM(salary)) AS total FROM employees;
+SELECT CONCAT('terás de pagar: ', SUM(salary)) AS total FROM hr.employees;
 ```
 
 ### 5. Escreva uma query que exiba quatro informações: o maior salário, o menor salário, a soma de todos os salários e a média dos salários. Todos os valores devem ser formatados para ter apenas duas casas decimais.
@@ -26,12 +30,12 @@ SELECT
     ROUND(MIN(salary),2) AS 'minimo',
     ROUND(SUM(salary),2) AS 'soma', 
     ROUND(AVG(salary),2) AS 'media' 
-FROM employees;
+FROM hr.employees;
 ```
 
 ### 6. Escreva uma query que exiba a quantidade de pessoas que trabalham como pessoas programadoras (it_prog).
 ```sql
-SELECT COUNT(*) FROM employees
+SELECT COUNT(*) FROM hr.employees
 GROUP BY job_id
 HAVING job_id = 'IT_PROG';
 ```
@@ -39,14 +43,14 @@ HAVING job_id = 'IT_PROG';
 ### 7. Escreva uma query que exiba a quantidade de dinheiro necessária para efetuar o pagamento de cada profissão (job_id).
 ```sql
 SELECT job_id, SUM(salary) AS 'total'
-FROM employees
+FROM hr.employees
 GROUP BY job_id;
 ```
 
 ### 8. Utilizando a query anterior, faça as alterações para que seja exibido somente a quantidade de dinheiro necessária para cobrir a folha de pagamento das pessoas programadoras (it_prog).
 ```sql
 SELECT job_id, SUM(salary) AS 'total'
-FROM employees
+FROM hr.employees
 GROUP BY job_id
 HAVING job_id = 'IT_PROG';
 ```
@@ -54,7 +58,7 @@ HAVING job_id = 'IT_PROG';
 ### 9. Escreva uma query que exiba em ordem decrescente a média salarial de todos os cargos, exceto das pessoas programadoras (it_prog).
 ```sql
 SELECT job_id, AVG(salary) AS 'total'
-FROM employees
+FROM hr.employees
 WHERE job_id != 'IT_PROG'
 GROUP BY job_id
 ORDER BY total DESC;
@@ -67,7 +71,7 @@ SELECT
     AVG(salary),
     COUNT(manager_id) AS funcionarios,
     COUNT(department_id) AS departamentos 
-FROM employees
+FROM hr.employees
 GROUP BY department_id
 HAVING departamentos > 10;
 ```
@@ -84,37 +88,37 @@ WHERE phone_number LIKE '515%';
 
 ### 12. Escreva uma query que só exiba as informações dos funcionários cujo o primeiro nome tenha oito ou mais caracteres.
 ```sql
-SELECT * FROM employees
+SELECT * FROM hr.employees
 WHERE LENGTH(first_name) > 8;
 ```
 
 ### 13. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e ano no qual foi contratado (exiba somente o ano).
 ```sql
-SELECT employee_id, first_name, YEAR(hire_date) AS ano FROM employees;
+SELECT employee_id, first_name, YEAR(hire_date) AS ano FROM hr.employees;
 ```
 
 ### 14. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e dia do mês no qual foi contratado (exiba somente o dia).
 ```sql
-SELECT employee_id, first_name, DAY(hire_date) AS ano FROM employees;
+SELECT employee_id, first_name, DAY(hire_date) AS ano FROM hr.employees;
 ```
 
 ### 15. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e mês no qual foi contratado (exiba somente o mês).
 ```sql
-SELECT employee_id, first_name, MONTH(hire_date) AS ano FROM employees;
+SELECT employee_id, first_name, MONTH(hire_date) AS ano FROM hr.employees;
 ```
 
 ### 16. Escreva uma query que exiba os nomes dos funcionários em letra maiúscula.
 ```sql
-SELECT UPPER(first_name) AS first_name, UPPER(last_name) AS last_name FROM employees;
+SELECT UPPER(first_name) AS first_name, UPPER(last_name) AS last_name FROM hr.employees;
 ```
 
 ### 17: Escreva uma query que exiba o sobrenome e a data de contratação de todos os funcionário contratados em julho de 1987.
 ```sql
-SELECT last_name, hire_date FROM employees
+SELECT last_name, hire_date FROM hr.employees
 WHERE hire_date BETWEEN '1987-07-00' AND '1987-07-31';
 ```
 
 ### 18: Escreva uma query que exiba as seguintes informações de cada funcionário: nome, sobrenome, tempo que trabalha na empresa (em dias).
 ```sql
-SELECT first_name, DATEDIFF(CURRENT_DATE(), hire_date) AS dias FROM employees;
+SELECT first_name, DATEDIFF(CURRENT_DATE(), hire_date) AS dias FROM hr.employees;
 ```
