@@ -9,8 +9,7 @@ FROM
         INNER JOIN
     pixar.movies AS m ON m.id = b.movie_id;
 ```
-##  Exercício 2: Utilizando o INNER JOIN, faça uma busca que retorne o número de vendas para cada filme que possui um número ```maior de vendas internacionais (international_sales) do que vendas nacionais (domestic_sales).
-## i > d
+##  Exercício 2: Utilizando o INNER JOIN, faça uma busca que retorne o número de vendas para cada filme que possui um número maior de vendas internacionais (international_sales) do que vendas nacionais (domestic_sales).
 ```sql
 SELECT 
     b.movie_id, m.title, b.international_sales + b.domestic_sales AS 'sales'
@@ -48,8 +47,9 @@ RIGHT JOIN pixar.theater AS t
 ON m.theater_id = t.id
 ORDER BY t.name;
 
-#  Exercícios - bônus
 ```
+#  Exercícios - bônus
+
 ## Exercício 6: Utilizando o INNER JOIN, selecione todas as informações dos filmes que estão em cartaz (possuem theater_id diferente de NULL) com avaliação maior que 8.
 ```sql
 SELECT
