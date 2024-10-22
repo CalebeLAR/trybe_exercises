@@ -1,26 +1,13 @@
-# trybe_exercises
+ Exercícios - agora, a prática:
 
-## Shape Branches: `module.section.day`
+Exercício 1: 🚀 Um zoológico precisa de um banco de dados para armazenar informações sobre os seus animais. As informações a serem armazenadas sobre cada animal são:
 
-#### Fundamentos
+    Nome;
+    Espécie;
+    Sexo;
+    Idade;
+    Localização;
 
-- [**fundamentals.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day01)**: Primeiros passos no JavaScript**  3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02)**: Array e estrutura de repetição** | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03)**: Funções** | `4 Exercícios` ✅  
-- [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04)**: Objetos** | `4 Exercícios` ✅  
-- [**fundamentals.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section04.day02)**: JavaScript - Trabalhando com elementos** | `9 Exercícios` ✅  
+Cada animal também possui vários cuidadores, e cada cuidador pode ser responsável por mais de um animal. Além disso, cada cuidador possui um gerente, sendo que cada gerente pode ser responsável por mais de um cuidador.
 
-#### Front-end
-
-- [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01)**: Ambiente de desenvolvimento** | `Exercício Validador de Campos` ✅  
-- [**front-end.section01.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day02)**: JavaScript Assíncrono - Promises e fetch** | `API de Super Heróis` ✅  
-<!-- - [**front-end.section01.day03**](https://github.com/CalebeLAR/exercise-casa-de-cambio)**: Revisão - Casa de Câmbio** | __`fork`__ `Exercício Casa de Câmbio` ✅   -->
-
-#### Back-end
-- [**back-end.section02.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day01)**: Banco de dados SQL** ✅  
-- [**back-end.section02.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day02)**: Encontrando dados em um banco de dados** ✅  
-- [**back-end.section02.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day03)**: Filtrando dados de forma específica** ✅  
-- [**back-end.section02.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day04)**: Manipulando tabelas** ✅
-- [**back-end.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day01)**: Funções mais usadas no SQL** ✅
-- [**back-end.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day02)**: Descomplicando JOINs** ✅
-- [**back-end.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day03)**: Transformando ideias em um modelo de banco de dados** ✅
+Siga os passos aprendidos no dia de hoje para modelar essa base de dados.
