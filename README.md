@@ -24,3 +24,4 @@
 - [**back-end.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day01)**: Funções mais usadas no SQL** ✅
 - [**back-end.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day02)**: Descomplicando JOINs** ✅
 - [**back-end.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day03)**: Transformando ideias em um modelo de banco de dados** ✅
+- [**back-end.section04.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day01)**: Node.js: Runtime Assíncrono** ✅
