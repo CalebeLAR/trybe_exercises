@@ -16,19 +16,16 @@ Exercícios realizados dentro de my-scripts.
 
 ``` Markdown 
 ##  2. Agora, permita que o código seja executado através do comando npm run bmi.
-
     O novo código criado deve conter o comando que chama o node para executar o arquivo bmi.js.
 ```
 
 ``` Markdown 
 ##  3. Chegou a hora de tornar nosso código mais interativo! Vamos adicionar inputs de entrada para quem usar.
-
     Edite o código para que os valores de weight e height sejam informados pela pessoa ao responder as perguntas: “What’s your weight?” e “What’s your height?”. Deve-se utilizar o pacote readline-sync.
 ```
 
 ``` Markdown 
 ##  4. Agora temos um problema, o peso não é um número inteiro! Isso quer dizer que precisamos mudar um pouco a forma como solicitamos o input desse dado.
-
     O pacote readline-sync possui uma função específica para tratar esses casos. Consulte a documentação do pacote e encontre a função adequada para realizar input de valores float.
     Encontrou a função? Show! Agora utilize-a para solicitar o input de weight.
 ```
@@ -36,7 +33,6 @@ Exercícios realizados dentro de my-scripts.
 
 ``` Markdown
 ##  5. Vamos sofisticar um pouco mais nosso exercício. Além de imprimir o IMC na tela, imprima também em qual categoria da tabela abaixo aquele IMC se enquadra:
-
     Considere a seguinte tabela para classificar a situação do IMC:
     IMC 	Situação
     Abaixo de 18,5 	Abaixo do peso (magreza)
