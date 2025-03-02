@@ -1,0 +1,24 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "exercicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "bmi": "node ./bmi.js",
+    "fibonacci": "node ./fibonacci.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebeLAR/trybe_exercises.git#back-end.section04.day01"
+  },
+  "author": "calebeLAR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebeLAR/trybe_exercises/issues"
+  },
+  "homepage": "https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day01#readme",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
+}
