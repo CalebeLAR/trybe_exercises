@@ -63,4 +63,14 @@ Exercícios realizados dentro de my-scripts.
     E - Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
 
     F - Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
+
+    D - Crie uma função que leia o arquivo simpsons.json e crie um novo arquivo, chamado simpsonFamily.json, contendo as personagens com id de 1 a 4.
+
+    E - Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
+
+    F - Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
+``` 
+``` Markdown
+## Exercícios - bônus
+    Crie um código que exiba o valor dos n primeiros elementos da sequência de Fibonacci. 
 ``` 
