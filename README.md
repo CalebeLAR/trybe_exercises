@@ -4,9 +4,9 @@ Exercícios realizados dentro de my-scripts.
 
 ``` Markdown 
 ##  1. Crie um código para calcular o índice de massa corporal(IMC) de uma pessoa.
-    * Armazene o código no arquivo bmi.js.
+    Armazene o código no arquivo bmi.js.
 
-    * A fórmula para calcular o IMC é: 
+    A fórmula para calcular o IMC é: 
         IMC = peso​/altura​²
 
         Obs: Lembre-se que a altura é em metros, caso deseje usar em centímetros a conversão para metros será necessária.
@@ -17,7 +17,7 @@ Exercícios realizados dentro de my-scripts.
 ``` Markdown 
 ##  2. Agora, permita que o código seja executado através do comando npm run bmi.
 
-    * O novo código criado deve conter o comando que chama o node para executar o arquivo bmi.js.
+    O novo código criado deve conter o comando que chama o node para executar o arquivo bmi.js.
 ```
 
 ``` Markdown 
@@ -45,6 +45,7 @@ Exercícios realizados dentro de my-scripts.
     Entre 30,0 e 34,9 	Obesidade grau I
     Entre 35,0 e 39,9 	Obesidade grau II
     40,0 e acima 	Obesidade graus III e IV
+```
 
 ``` Markdown
 ## Exercício 6
