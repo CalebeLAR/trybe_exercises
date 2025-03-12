@@ -88,5 +88,5 @@ O corpo da requisição deve receber o seguinte formato:
 
 
 🚀 Exercício 9
-
-Crie um endpoint do tipo DELETE com a rota /movies/:id que possa deletar um filme do JSON.
+    * Criar um endpoint do tipo DELETE com a rota /movies/:id que possa deletar um filme do JSON.
+    
