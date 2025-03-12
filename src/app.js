@@ -15,7 +15,20 @@ const readMovies = async () => {
 
 app.get('/', (_req, res) => {
     res.send('Olá Mundo!')
+
 })
+
+
+app.get('/movies/search', async (req, res) => {
+    const query = req.query.q;
+    let movies = await readMovies();
+    movies = movies.filter((movie) => movie.movie.includes(query))
+
+    console.log(movies)
+
+    res.send(movies);
+})
+
 
 app.get('/movies/:id', async (req, res) => {
     const movieId = req.params.id
@@ -67,7 +80,6 @@ app.delete('/movies/:id', async (req, res) => {
 
     res.send(movies)
 })
-
 
 
 app.listen(port, () => {
