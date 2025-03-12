@@ -60,7 +60,7 @@ app.delete('/movies/:id', async (req, res) => {
     const movieId = req.params.id
     let movies = await readMovies()
 
-    movies = movies.map((movie) => movie.id != movieId)
+    movies = movies.filter((movie) => movie.id != movieId)
 
     await fs.writeFile('src/movies.json', JSON.stringify(movies));
     movies = await readMovies()
