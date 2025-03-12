@@ -35,11 +35,22 @@ app.get('/movies', async (_req, res) => {
 
 app.post('/movies', async (req, res) => {
     const movies = await readMovies()
-    
+
     const newId = movies.reduce((newId, movie) => (newId <= movie.id) ? newId = +movie.id + 1 : newId, 0)
     const newMovie = { id: newId, ...req.body }
-    
+
     movies.push(newMovie)
+    await fs.writeFile('src/movies.json', JSON.stringify(movies));
+
+    res.send(newMovie)
+})
+
+app.put('/movies/:id', async (req, res) => {
+    const newMovie = { id: req.params.id, ...req.body }
+
+    const movies = await readMovies()
+    movies = movies.map((movie) => movie.id == req.params.id ? newMovie : movie)
+
     await fs.writeFile('src/movies.json', JSON.stringify(movies));
 
     res.send(newMovie)

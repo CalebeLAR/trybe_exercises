@@ -67,28 +67,25 @@ Agora, faça os exercícios a seguir:
     * Criar um endpoint do tipo POST com a rota /movies, para cadastrar um novo filme no JSON.
 
 O corpo da requisição deve receber o seguinte formato:
-
-{
-
-  "movie": "Vingadores",
-
-  "price": 5
-
-}
+```json
+    {
+        "movie": "Vingadores",
+        "price": 5
+    }
+```
 
 🚀 Exercício 8
 
 Crie um endpoint do tipo PUT com a rota /movies/:id, que possa editar informações de um filme do JSON.
 
 O corpo da requisição deve receber o seguinte formato:
+```json
+    {
+        "movie": "Vingadores: Ultimato",
+        "price": 5
+    }
+```
 
-{
-
-  "movie": "Vingadores: Ultimato",
-
-  "price": 5
-
-}
 
 🚀 Exercício 9
 
