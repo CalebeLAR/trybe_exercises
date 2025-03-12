@@ -22,6 +22,12 @@ app.get('/movies/:id', async (req, res) => {
     res.send(movie)
 })
 
+app.get('/movies', async (req, res) => {
+    const movies = await readMovies()
+
+    res.send(movies)
+})
+
 app.listen(port, () => {
     console.log(`App de exemplo esta rodando na porta ${port}`)
 })

@@ -58,11 +58,11 @@ Agora, faça os exercícios a seguir:
     * Criar uma função de leitura do JSON com o modulo fs.
 
 🚀 Exercício 5
-    * Crie um endpoint do tipo GET com a rota /movies/:id, que possa listar um filme do JSON por id.
+    * Criar um endpoint do tipo GET com a rota /movies/:id, que possa listar um filme do JSON por id.
 
 🚀 Exercício 6
 
-Crie um endpoint do tipo GET com a rota /movies, que possa listar todos os filmes do JSON.
+    * Criar um endpoint do tipo GET com a rota /movies, que possa listar todos os filmes do JSON.
 🚀 Exercício 7
 
 Crie um endpoint do tipo POST com a rota /movies, para cadastrar um novo filme no JSON.
