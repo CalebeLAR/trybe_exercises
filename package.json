@@ -1,0 +1,23 @@
+{
+  "name": "trybe_exercises",
+  "version": "1.0.0",
+  "description": "Exercícios - agora, a prática  🚀 Exercício 1 Qual é a função do código de status 400 e 422?     O status 400 Bad Request é enviada quando um erro que ocorre quando o servidor não consegue processar uma solicitação.      O status 422 geralmente é enviado quando o servidor consegue processar, mas não enviar, pois vem com erros semânticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebeLAR/trybe_exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebeLAR/trybe_exercises/issues"
+  },
+  "homepage": "https://github.com/CalebeLAR/trybe_exercises#readme",
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}
