@@ -20,7 +20,7 @@ app.get('/', (_req, res) => {
 app.get('/movies/:id', async (req, res) => {
     const movieId = req.params.id
     const movies = await readMovies()
-    const movie = movies.find((movie) => Number(movie.id) == movieId)
+    const movie = movies.find((movie) => movie.id == movieId)
 
 
     res.send(movie)
@@ -46,9 +46,9 @@ app.post('/movies', async (req, res) => {
 })
 
 app.put('/movies/:id', async (req, res) => {
-    const newMovie = { id: req.params.id, ...req.body }
+    const newMovie = { id: Number(req.params.id), ...req.body }
 
-    const movies = await readMovies()
+    let movies = await readMovies()
     movies = movies.map((movie) => movie.id == req.params.id ? newMovie : movie)
 
     await fs.writeFile('src/movies.json', JSON.stringify(movies));

@@ -76,7 +76,7 @@ O corpo da requisição deve receber o seguinte formato:
 
 🚀 Exercício 8
 
-Crie um endpoint do tipo PUT com a rota /movies/:id, que possa editar informações de um filme do JSON.
+    * Crie um endpoint do tipo PUT com a rota /movies/:id, que possa editar informações de um filme do JSON.
 
 O corpo da requisição deve receber o seguinte formato:
 ```json

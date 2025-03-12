@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "movie": "Avatar",
-        "price": 5
+        "movie": "sharknado",
+        "price": 9
     },
     {
         "id": 2,
@@ -36,7 +36,17 @@
     },
     {
         "id": 8,
-        "movie": "Vingadores",
-        "price": "5"
+        "movie": "Vingadores: Ultimato",
+        "price": 5
+    },
+    {
+        "id": 9,
+        "movie": "Vingadores: Ultimato",
+        "price": 5
+    },
+    {
+        "id": 10,
+        "movie": "Vingadores: Ultimato",
+        "price": 5
     }
 ]
