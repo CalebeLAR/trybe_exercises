@@ -1,28 +1,96 @@
-# trybe_exercises
+Exercícios - agora, a prática
+ 🚀 Exercício 1
+Qual é a função do código de status 400 e 422?
+    O status 400 Bad Request é enviada quando um erro que ocorre quando o servidor não consegue processar uma solicitação. 
+    O status 422 geralmente é enviado quando o servidor consegue processar, mas não enviar, pois vem com erros semânticos
 
-## Shape Branches: `module.section.day`
+🚀 Exercício 2
+Qual é a função do código de status 401?
+    O status 401 unauthorized é enviado quando a solicitação de acesso a um recurso foi negada  
 
-#### Fundamentos
 
-- [**fundamentals.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day01)**: Primeiros passos no JavaScript**  3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02)**: Array e estrutura de repetição** | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03)**: Funções** | `4 Exercícios` ✅  
-- [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04)**: Objetos** | `4 Exercícios` ✅  
-- [**fundamentals.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section04.day02)**: JavaScript - Trabalhando com elementos** | `9 Exercícios` ✅  
+Crie o diretório src e dentro dele um arquivo movies.json com o os filmes da nossa locadora:
+```json
+[
+    {
+        "id": 1,
+        "movie": "Avatar",
+        "price": 5
+    },
+    {
+        "id": 2,
+        "movie": "Gente Grande",
+        "price": 2
+    },
+    {
+        "id": 3,
+        "movie": "O Jogo",
+        "price": 3
+    },
+    {
+        "id": 4,
+        "movie": "Quebrando a Banca",
+        "price": 5
+    },
+    {
+        "id": 5,
+        "movie": "Lilo & Stitch",
+        "price": 2
+    },
+    {
+        "id": 6,
+        "movie": "Os Fantasmas se Divertem",
+        "price": 2
+    },
+    {
+        "id": 7,
+        "movie": "Meninas Malvadas",
+        "price": 3
+    }
+]
+```
 
-#### Front-end
+Agora, faça os exercícios a seguir:
+🚀 Exercício 3
+    * Criar um servidor Node.js utilizando o framework Express.
 
-- [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01)**: Ambiente de desenvolvimento** | `Exercício Validador de Campos` ✅  
-- [**front-end.section01.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day02)**: JavaScript Assíncrono - Promises e fetch** | `API de Super Heróis` ✅  
-<!-- - [**front-end.section01.day03**](https://github.com/CalebeLAR/exercise-casa-de-cambio)**: Revisão - Casa de Câmbio** | __`fork`__ `Exercício Casa de Câmbio` ✅   -->
+🚀 Exercício 4
 
-#### Back-end
-- [**back-end.section02.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day01)**: Banco de dados SQL** ✅  
-- [**back-end.section02.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day02)**: Encontrando dados em um banco de dados** ✅  
-- [**back-end.section02.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day03)**: Filtrando dados de forma específica** ✅  
-- [**back-end.section02.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day04)**: Manipulando tabelas** ✅
-- [**back-end.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day01)**: Funções mais usadas no SQL** ✅
-- [**back-end.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day02)**: Descomplicando JOINs** ✅
-- [**back-end.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day03)**: Transformando ideias em um modelo de banco de dados** ✅
-- [**back-end.section04.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day01)**: Node.js: Runtime Assíncrono** ✅
-- [**back-end.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day02)**: Node.js: API REST com Express** ✅
+Crie uma função de leitura do JSON com o modulo fs.
+🚀 Exercício 5
+
+Crie um endpoint do tipo GET com a rota /movies/:id, que possa listar um filme do JSON por id.
+🚀 Exercício 6
+
+Crie um endpoint do tipo GET com a rota /movies, que possa listar todos os filmes do JSON.
+🚀 Exercício 7
+
+Crie um endpoint do tipo POST com a rota /movies, para cadastrar um novo filme no JSON.
+
+O corpo da requisição deve receber o seguinte formato:
+
+{
+
+  "movie": "Vingadores",
+
+  "price": 5
+
+}
+
+🚀 Exercício 8
+
+Crie um endpoint do tipo PUT com a rota /movies/:id, que possa editar informações de um filme do JSON.
+
+O corpo da requisição deve receber o seguinte formato:
+
+{
+
+  "movie": "Vingadores: Ultimato",
+
+  "price": 5
+
+}
+
+🚀 Exercício 9
+
+Crie um endpoint do tipo DELETE com a rota /movies/:id que possa deletar um filme do JSON.
