@@ -1,0 +1,29 @@
+{
+  "name": "trybe_exercises",
+  "version": "1.0.0",
+  "description": "Exercícios - agora, a prática",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app",
+    "test": "mocha tests/**/*.test.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebeLAR/trybe_exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebeLAR/trybe_exercises/issues"
+  },
+  "homepage": "https://github.com/CalebeLAR/trybe_exercises#readme",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "chai-http": "4.3.0",
+    "mocha": "^8.4.0"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}

@@ -1,29 +1,28 @@
-# trybe_exercises
+ Exercícios - agora, a prática
 
-## Shape Branches: `module.section.day`
+Clientes da nossa API Cacau Trybe querem mais informações sobre os chocolates e cabe à você como pessoa desenvolvedora de back-end, criar mais três endpoints, para isso, utilize a técnica de TDD!
 
-#### Fundamentos
+GET /chocolates/total : Quantidade total de chocolates
 
-- [**fundamentals.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day01)**: Primeiros passos no JavaScript**  3 Exercícios` ✅
-- [**fundamentals.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day02)**: Array e estrutura de repetição** | `6 Exercícios` ✅
-- [**fundamentals.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day03)**: Funções** | `4 Exercícios` ✅  
-- [**fundamentals.section03.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section03.day04)**: Objetos** | `4 Exercícios` ✅  
-- [**fundamentals.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/fundamentals.section04.day02)**: JavaScript - Trabalhando com elementos** | `9 Exercícios` ✅  
+    Esse endpoint deve retornar a quantidade de tipos de chocolates que existem na base de dados, usando o seguinte contrato:
 
-#### Front-end
+👉 GET /chocolates/total
 
-- [**front-end.section01.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day01)**: Ambiente de desenvolvimento** | `Exercício Validador de Campos` ✅  
-- [**front-end.section01.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/front-end.section01.day02)**: JavaScript Assíncrono - Promises e fetch** | `API de Super Heróis` ✅  
-<!-- - [**front-end.section01.day03**](https://github.com/CalebeLAR/exercise-casa-de-cambio)**: Revisão - Casa de Câmbio** | __`fork`__ `Exercício Casa de Câmbio` ✅   -->
+    Objetivo: Retornar a quantidade de tipos de chocolates que existem.
+    Código HTTP: 200 - OK;
+    Body (exemplo):
 
-#### Back-end
-- [**back-end.section02.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day01)**: Banco de dados SQL** ✅  
-- [**back-end.section02.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day02)**: Encontrando dados em um banco de dados** ✅  
-- [**back-end.section02.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day03)**: Filtrando dados de forma específica** ✅  
-- [**back-end.section02.day04**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section02.day04)**: Manipulando tabelas** ✅
-- [**back-end.section03.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day01)**: Funções mais usadas no SQL** ✅
-- [**back-end.section03.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day02)**: Descomplicando JOINs** ✅
-- [**back-end.section03.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section03.day03)**: Transformando ideias em um modelo de banco de dados** ✅
-- [**back-end.section04.day01**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day01)**: Node.js: Runtime Assíncrono** ✅
-- [**back-end.section04.day02**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day02)**: Node.js: API REST com Express** ✅
-- [**back-end.section04.day03**](https://github.com/CalebeLAR/trybe_exercises/tree/back-end.section04.day03)**: Node.js: Testes de Integração** ✅
+{
+
+  "totalChocolates": 4 // quantidade de chocolates na base de dados
+
+}
+
+Exercício 1
+
+Crie os testes de integração para o endpoint GET /chocolates/total
+
+    Crie um caso para o código retornado
+    Crie outro caso para o retorno esperado
+
+Atenção: Observe que os testes devem falhar por enquanto, como estamos desenvolvendo usando o conceito de TDD, mas não se preocupe que na sequência vamos fazer a implementação e os testes deverão passar. 👍
