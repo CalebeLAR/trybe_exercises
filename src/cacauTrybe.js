@@ -18,6 +18,12 @@ const getAllChocolates = async () => {
   return cacauTrybe.chocolates;
 };
 
+const getTotalChocolates = async () => {
+  const cacauTrybe = await readCacauTrybeFile();
+  return cacauTrybe.chocolates.length;
+};
+
 module.exports = {
     getAllChocolates,
+    getTotalChocolates
 };

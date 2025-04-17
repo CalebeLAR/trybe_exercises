@@ -9,4 +9,10 @@ app.get('/chocolates', async (req, res) => {
     res.status(200).json({ chocolates });
 })
 
+app.get('/chocolates/total', async (req, res) => {
+
+    const totalChocolates = await cacauTrybe.getTotalChocolates();
+    res.status(200).json({ totalChocolates });
+})
+
 module.exports = app
