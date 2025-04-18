@@ -3,16 +3,29 @@ const cacauTrybe = require('./cacauTrybe')
 
 const app = express()
 
+const MAP_STATUS = {
+    OK: 200,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR: 500,
+}
+
+app.get('/chocolates/search', async (req, res) => {
+    const { name } = req.query;
+    
+    const totalChocolates = await cacauTrybe.getChocolatesSearch(name);
+    res.status(MAP_STATUS.OK).json({ totalChocolates });
+})
+
 app.get('/chocolates', async (req, res) => {
 
     const chocolates = await cacauTrybe.getAllChocolates();
-    res.status(200).json({ chocolates });
+    res.status(MAP_STATUS.OK).json({ chocolates });
 })
 
 app.get('/chocolates/total', async (req, res) => {
 
     const totalChocolates = await cacauTrybe.getTotalChocolates();
-    res.status(200).json({ totalChocolates });
+    res.status(MAP_STATUS.OK).json({ totalChocolates });
 })
 
 module.exports = app
