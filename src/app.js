@@ -11,9 +11,14 @@ const MAP_STATUS = {
 
 app.get('/chocolates/search', async (req, res) => {
     const { name } = req.query;
-    
-    const totalChocolates = await cacauTrybe.getChocolatesSearch(name);
-    res.status(MAP_STATUS.OK).json({ totalChocolates });
+
+    const searchedChocolates = await cacauTrybe.getChocolatesSearch(name);
+
+    if (searchedChocolates.length === 0) {
+        return res.status(MAP_STATUS.NOT_FOUND).json({ searchedChocolates });
+    }
+
+    res.status(MAP_STATUS.OK).json({ searchedChocolates });
 })
 
 app.get('/chocolates', async (req, res) => {
