@@ -60,4 +60,26 @@ describe('Testando a API Cacau Trybe', function () {
       expect(response.body.searchedChocolates).to.deep.equal(searchedChocolates);
     });
   });
+  describe('Usando o método PUT em /chocolates/:id', function () {
+    it('Atualiza um chocolate', async function () {
+      const searchedChocolates = [
+        { id: 3, name: 'Mon Chéri', brandId: 2 },
+        { id: 4, name: 'Mounds', brandId: 3 },
+      ];
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=Mo');
+      expect(response.status).to.be.equal(200);
+      expect(response.body.searchedChocolates).to.deep.equal(searchedChocolates);
+    });
+    it('Retorna erro caso nem um chocolate confere o nome pesquisado!', async function () {
+      const searchedChocolates = [];
+
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=undefined');
+      expect(response.status).to.be.equal(404);
+      expect(response.body.searchedChocolates).to.deep.equal(searchedChocolates);
+    });
+  });
 });
